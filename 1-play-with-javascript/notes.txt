@@ -1,0 +1,46 @@
+
+
+why we need to learn javascript?
+
+- to build web-UI applications  ( our focus )
+- to build server-side applications
+- to build mobile and desktop applications
+
+
+------------------------------------------------------------
+
+
+what makes javascript very popular ?
+
+- single threaded programming language
+- non-blocking i/o
+- event driven programming language
+- functional programming language
+- dynamic programming language
+
+
+------------------------------------------------------------
+
+javascript is based on ECMAScript standard
+
+ECMAScript 6  => ECMAScript 2015
+
+------------------------------------------------------------
+
+
+how to execute javascript code ?
+
+    - using javascript engine ( interpreter )
+
+    - browser has in-built javascript engine
+
+        1. chrome  => v8
+        2. firefox => spider monkey
+        3. safari  => nitro
+        4. IE      => chakra
+
+    - node.js has in-built javascript engine
+
+        => v8
+
+------------------------------------------------------------
