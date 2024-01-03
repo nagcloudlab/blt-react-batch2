@@ -1,0 +1,27 @@
+
+-----------------------------------------------------------------------
+
+Level-1:
+
+    - data types
+    - literal-style objects
+    - execution-context / scope
+    - functional programming concepts & principles
+    - oo concepts
+    - 'this' keyword / function binding
+    - list / set / map data structures
+    
+level-2:
+
+    - es6 & above new features
+    - module standards & loaders
+    - async programming
+        - promises
+        - rxjs
+
+level-3
+
+    - unit-testing with ( jest )
+    - typescript
+
+-----------------------------------------------------------------------    
