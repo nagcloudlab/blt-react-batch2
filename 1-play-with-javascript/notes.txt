@@ -13,10 +13,10 @@ why we need to learn javascript?
 what makes javascript very popular ?
 
 - single threaded programming language
-- non-blocking i/o
 - event driven programming language
 - functional programming language
 - dynamic programming language
+- non-blocking I/O
 
 
 ------------------------------------------------------------
