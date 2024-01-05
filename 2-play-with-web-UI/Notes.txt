@@ -81,15 +81,12 @@ component based libraries/frameworks
 
 ---------------------------------------------
 
-if i want front-end web development, then i should learn
+if you want front-end web development, then should learn
 
 1. HTML
 2. CSS
 3. JS / TS
 4. Browser Apis ( DOM, XHR, etc )
 5. JS Libraries / Frameworks
-    React.js
-    Angular
-    Vue.js
 ---------------------------------------------
 
