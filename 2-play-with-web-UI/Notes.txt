@@ -1,1 +1,95 @@
 
+
+UI => data + style + interaction
+Web UI => HTML + CSS + JS
+
+
+----------------------------------------------
+
+
+javascript-programs can do magic on HTML-page
+via browser's Web APIs
+
+e.g DOM API, XHR/Fetch API, setTimeout API, etc
+
+- w3c recommendations
+
+- browser vendors implement them, abstracted to us
+  as javascript objects and functions
+
+----------------------------------------------
+
+Document Object Model
+XHR/Fetch API
+
+---------------------------------------------
+problems working with web apis directly
+---------------------------------------------
+
+- browser incompatibility issues
+- memory leaks
+- performance issues
+- verbose code
+- code maintainability issues
+- re-usability issues
+
+---------------------------------------------
+solution to above problems
+---------------------------------------------
+- server-side page rendering ( e.g JSP, ASP, PHP, etc )
+
+limitation of server-side page rendering
+
+ - on every request, entire page will be re-rendered
+ - on every request, server-side programs should re-construct entire page
+   keeping client's state
+ - on every response, transfer entire page from server to client leads to
+   network latency    
+
+---------------------------------------------
+modern solutions to above problems
+---------------------------------------------
+
+- client-side page rendering 
+
+how ?
+
+- using third-party's javascript libraries/frameworks
+
+---------------------------------------------
+
+
+1. jquery =>  DOM & XHR utility library 
+
+
+MVC => Model View Controller ( design pattern )
+---------------------------------------------
+
+2. Backbone.js
+3. Knockout.js
+4. Ember.js
+5. DOJO
+6. Ext.js from sencha
+7. Angular.js  ( popular )
+
+
+component based libraries/frameworks
+
+1. React.js ( from facebook ) -
+2. Angular
+3. Vue.js
+
+---------------------------------------------
+
+if i want front-end web development, then i should learn
+
+1. HTML
+2. CSS
+3. JS / TS
+4. Browser Apis ( DOM, XHR, etc )
+5. JS Libraries / Frameworks
+    React.js
+    Angular
+    Vue.js
+---------------------------------------------
+
