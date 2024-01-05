@@ -44,3 +44,14 @@ how to execute javascript code ?
         => v8
 
 ------------------------------------------------------------
+
+
+- https://javascript.info/
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript
+- https://exploringjs.com/es6/index.html
+
+------------------------------------------------------------
+
+- http://latentflip.com/loupe
+
+------------------------------------------------------------
