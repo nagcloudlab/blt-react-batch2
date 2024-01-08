@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 
-// 1. JSX => template syntax, that looks like HTML, but not HTML
+/**
+ * JSX => template syntax, that looks like HTML, but not HTML
+ */
+
 function App_v1() {
   return (
     <div>
       <div className="container">
         <h1 className="display-1">React Core Concepts</h1>
+        <h6 className="display-6">JSX</h6>
       </div>
       <hr />
       {1 + 1}
@@ -26,9 +30,15 @@ function App_v1() {
   // return null;
 }
 
-//2. props  => data to the component, that comes from outside ( parent component ), immutable
+// ---------------------------------------------------------
+
+/**
+ * props  => data to the component, that comes from outside ( parent component ), immutable
+ */
+
 function App_v2(props) {
-  //props.title = "New Title"; // Error: Cannot assign to read only property 'title' of object '#<Object>'
+  // Error: Cannot assign to read only property 'title' of object '#<Object>'
+  //props.title = "New Title";
   let { title, version } = props;
   return (
     <div>
@@ -36,21 +46,7 @@ function App_v2(props) {
         <h1 className="display-1">
           {title}:{version}
         </h1>
-      </div>
-      <hr />
-    </div>
-  );
-}
-
-// props.children
-function App_v3(props) {
-  let { title, version, children } = props;
-  return (
-    <div>
-      <div className="container">
-        <h1 className="display-1">
-          {title}:{version}
-        </h1>
+        <h6 className="display-6">props</h6>
       </div>
       <hr />
       {/* {children} */}
@@ -67,25 +63,28 @@ function App_v3(props) {
   );
 }
 
-//3. state  => data inside component, that changes over time on user events
-function App_v4(props) {
+// ---------------------------------------------------------
+
+/**
+ * state  => data inside component, that changes over time on user events
+ */
+function App_v3(props) {
   console.log("App::render()");
   let { title, version } = props;
   const [count, setCount] = useState(10); // state-managent hook
-
   const incrementHandler = (e) => {
     setCount(count + 1); // re-render the component on Virtual DOM, then compare with real DOM, then update the real DOM
   };
   const decrementHandler = (e) => {
     setCount(count - 1);
   };
-
   return (
     <div className="container">
       <div className="container">
         <h1 className="display-1">
           {title}:{version}
         </h1>
+        <h6 className="display-6">state</h6>
       </div>
       <hr />
       <div className="card">
@@ -115,4 +114,4 @@ function App_v4(props) {
   );
 }
 
-export default App_v4;
+export default App_v3;
