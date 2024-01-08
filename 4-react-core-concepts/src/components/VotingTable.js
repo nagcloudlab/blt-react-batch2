@@ -14,7 +14,7 @@ function VotingTable(props) {
             <tr>
               <th>Item</th>
               <th>Likes</th>
-              <th>Disikes</th>
+              <th>Dislikes</th>
             </tr>
           </thead>
           <tbody>
