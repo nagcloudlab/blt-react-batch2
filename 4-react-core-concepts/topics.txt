@@ -7,5 +7,6 @@ react component
     - JSX ( template syntax for react component)
     - props
     - hooks
+    - thinking in react 
 
 
