@@ -19,7 +19,13 @@ function VotingTable(props) {
           </thead>
           <tbody>
             {votingLines.map((line, index) => (
-              <tr key={index}>
+              <tr
+                key={index}
+                // style={{
+                //   color: line.likes < line.dislikes ? "red" : "",
+                // }}
+                className={line.likes < line.dislikes ? "text-danger" : ""}
+              >
                 <td>{line.item}</td>
                 <td>{line.likes}</td>
                 <td>{line.dislikes}</td>

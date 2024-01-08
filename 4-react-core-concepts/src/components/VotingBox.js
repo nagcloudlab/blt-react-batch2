@@ -4,11 +4,11 @@ import VotingTable from "./VotingTable";
 
 function VotingBox(props) {
   console.log("VoteBox render");
-  let [votingItems, setVotingItems] = useState(["foo", "bar", "baz"]); // ["foo", "bar", "baz"
+  let [votingItems, setVotingItems] = useState(["React", "Angular", "Vue"]);
   let [votingLines, setVotingLines] = useState([
-    { item: "foo", likes: 0, dislikes: 0 },
-    { item: "bar", likes: 0, dislikes: 0 },
-    { item: "baz", likes: 0, dislikes: 0 },
+    { item: "React", likes: 0, dislikes: 0 },
+    { item: "Angular", likes: 0, dislikes: 0 },
+    { item: "Vue", likes: 0, dislikes: 0 },
   ]);
   const handleVote = (e) => {
     let { item, vote } = e;
