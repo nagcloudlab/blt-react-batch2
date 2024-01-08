@@ -1,12 +1,31 @@
 
 
 
-react component
------------------
+topics ( jan-8th )
+---------------------
 
     - JSX ( template syntax for react component)
     - props
     - hooks
     - thinking in react 
+   
+
+topics ( jan-9th )
+---------------------
+
+     - state-management-hooks
+        - useState
+        - useReducer
+
+    - effects
+        - useEffect
+
+    - conext 
+        - useContext
+
+    - more hooks
+        - useRef
+        - useCallback
+        - useMemo    
 
 
