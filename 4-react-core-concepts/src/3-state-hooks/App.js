@@ -1,5 +1,5 @@
 import React from "react";
-import Counter from "./Counter";
+import VotingBox from "./VotingBox_v4";
 
 function App() {
   return (
@@ -7,7 +7,7 @@ function App() {
       <h1 className="display-1">React Core Concepts</h1>
       <h6 className="display-6">State-Management-hooks</h6>
       <hr />
-      <Counter />
+      <VotingBox />
     </div>
   );
 }

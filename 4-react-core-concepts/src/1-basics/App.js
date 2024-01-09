@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 /**
- * JSX => template syntax, that looks like HTML, but not HTML
+ * jsx => template syntax, that looks like HTML, but not HTML
  */
 
 function App_v1() {
