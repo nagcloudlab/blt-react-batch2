@@ -20,13 +20,7 @@ function TodosApp(props) {
           <hr />
         </div>
         <TodosContext.Provider value={{ todos, dispatch }}>
-          <TodoInput
-            onNewTodo={(title) =>
-              console.log(
-                "child , i got you title, ill update my state, u keep listening enter key .."
-              )
-            }
-          />
+          <TodoInput />
           <TodosList />
           <TodosFooter />
         </TodosContext.Provider>
