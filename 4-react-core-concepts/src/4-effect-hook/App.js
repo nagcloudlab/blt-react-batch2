@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Ex from "./Ex5";
+import DataFetchingComponent from "./DataFetchingComponent";
 
 function App() {
   const [toggle, setToggle] = useState(true);
@@ -10,7 +10,7 @@ function App() {
       <hr />
       <button onClick={(e) => setToggle(!toggle)}>toggle component</button>
       <hr />
-      {toggle && <Ex />}
+      {toggle && <DataFetchingComponent />}
     </div>
   );
 }
