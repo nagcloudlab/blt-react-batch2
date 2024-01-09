@@ -12,14 +12,16 @@ function DataFetchingComponent(props) {
 
     // - data fetching
     // - manual DOM manipulation
-    // - event listeners or timeouts and intervals
-    // - subscriptions
+    // - timeouts and intervals
+    // - subscriptions to external sources ( e.g. websockets, redux)
 
+    // e.g fetch data from an API
     fetch(`https://jsonplaceholder.typicode.com/${resourceType}?_limit=10`)
       .then((response) => response.json())
       .then((data) => {
         setData(data);
       });
+
     return () => {
       console.log("cleanup - resource change");
     };
