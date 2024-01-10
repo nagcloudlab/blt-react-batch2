@@ -1,0 +1,11 @@
+.my-style {
+  font-size: 1em;
+  background-color: tomato;
+}
+
+@media screen and (min-width: 501px) {
+  .my-style {
+    font-size: 2em;
+    background-color: lightblue;
+  }
+}
