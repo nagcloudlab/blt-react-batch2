@@ -1,0 +1,17 @@
+
+
+
+
+state management challenges over react-components
+
+- should right-parent component to keep state
+- should pass state to child component via props or context
+- on user interaction, child component should notify parent component to update state 
+- state scattered across components, hard to maintain
+- component become hard to reuse and test , if they are coupled with state
+- when dis-positioned the component, state should be moved to new parent component
+
+
+Solutios(s)
+
+- state management library like "redux", mobx, flux, etc

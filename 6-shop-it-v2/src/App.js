@@ -6,21 +6,13 @@ import CartBadge from "./components/CartBadge";
 import CartView from "./components/CartView";
 
 function App() {
-  const [cart, setCart] = useState([]);
-
-  const handleBuy = (product) => {
-    let newCart = [...cart, product];
-    setCart(newCart);
-  };
-
   return (
     <div className="container">
       <Navbar title={"shop-IT"} />
       <hr />
-      <CartBadge value={cart.length} />
-      <CartView value={cart} />
+      <CartView />
       <br />
-      <ProductList onBuy={handleBuy} />
+      <ProductList />
     </div>
   );
 }

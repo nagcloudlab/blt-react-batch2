@@ -1,0 +1,104 @@
+
+state management challenges over react-components
+
+- should right-parent component to keep state
+- should pass state to child component via props or context
+- on user interaction, child component should notify parent component to update state 
+- state scattered across components, hard to maintain
+- component become hard to reuse and test , if they are coupled with state
+- when dis-positioned the component, state should be moved to new parent component
+
+
+Solutios(s)
+
+- state management library like "redux", mobx, flux, etc
+
+------------------------------------------------------
+
+steps to juse/work with redux
+
+
+step-1 : Know UI application's state
+
+    e.g shop-UI application's state
+
+    - products
+    - reviews
+    "- cart"
+    - user
+    - orders
+    - etc
+
+step-2 : Identify UI application's state changes ( Actions )
+
+   e.g cart
+
+      - add item / buy  
+      - remove item
+      - update item
+      - clear cart
+
+step-3 : define function as action creators
+
+    e.g
+
+    function addItem(item) {
+        return { type: 'ADD_ITEM', item }
+    }
+
+    function removeItem(item) {
+        return { type: 'REMOVE_ITEM', item }
+    }   
+
+step-4 : define reducer(s) to handle actions for each slice of state
+
+    e.g
+
+    function cartReducer(state = [], action) {
+        switch (action.type) {
+            case 'ADD_ITEM':
+                return [...state, action.item]
+            case 'REMOVE_ITEM':
+                return state.filter(item => item.id !== action.item.id)
+            default:
+                return state;
+        }
+    }    
+
+step-5 : combine all reducers to create root-reducer
+
+    e.g
+
+    const rootReducer = combineReducers({
+        cart: cartReducer,
+        user: userReducer,
+        orders: ordersReducer
+    })    
+
+step-6 : create store with root-reducer and initial-state
+
+    e.g
+
+    const store = createStore(rootReducer, {
+        cart: [],
+        user: null,
+        orders: []
+    })    
+
+------------------------------------------------------    
+
+// step-7 : use redux with react`
+
+    - put store in react context
+    - on component, select state from store and subscribe to store
+    - on component, dispatch actions to store
+    
+    how ?
+
+    library : react-redux 
+
+            - hooks
+                - useSelector  => select state from store
+                - useDispatch  => dispatch actions to store
+
+------------------------------------------------------
