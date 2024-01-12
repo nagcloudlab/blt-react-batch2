@@ -9,7 +9,7 @@ const products = [
     price: 2000,
     isAvailable: true,
     isBuyable: true,
-    image: "images/Laptop.png",
+    image: "/images/Laptop.png",
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const products = [
     price: 2000,
     isAvailable: true,
     isBuyable: true,
-    image: "images/Mobile.png",
+    image: "/images/Mobile.png",
   },
 ];
 const reviews = {
@@ -58,7 +58,9 @@ router.get("/", function (req, res, next) {
 
 router.get("/:id/reviews", function (req, res, next) {
   const id = req.params.id;
-  res.json(reviews[Number.parseInt(id)]);
+  setTimeout(() => {
+    res.json(reviews[Number.parseInt(id)]);
+  }, 5000);
 });
 router.post("/:id/reviews", function (req, res, next) {
   const id = Number.parseInt(req.params.id);
