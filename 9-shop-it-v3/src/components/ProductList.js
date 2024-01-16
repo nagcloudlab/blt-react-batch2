@@ -24,7 +24,7 @@ function ProductList({ }) {
     });
   };
 
-  return <div>categor: {category}{category=="elec"?renderProducts():null}</div>;
+  return <div>categor: {category}{renderProducts()}</div>;
 }
 
 export default ProductList;

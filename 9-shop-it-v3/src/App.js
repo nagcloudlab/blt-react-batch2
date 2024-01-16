@@ -11,7 +11,8 @@ import {
   Link,
   Routes,
   Route,
-  createBrowserRouter
+  createBrowserRouter,
+  
 } from "react-router-dom";
 import Home from "./components/Home";
 
@@ -52,8 +53,7 @@ function App() {
     
       <hr />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/products/:category" element={<ProductList />} />
+        <Route path="/" element={<ProductList />}/>
         <Route path="/cart" element={<CartView />} />
       </Routes>
       </Router>

@@ -8,7 +8,7 @@ const api = axios.create({
   },
 });
 
-export const getProducts = (category) => api.get(`/v1/products?category=${category}&page=0&size=10`);
+export const getProducts = (category) => api.get(`/v1/products`);
 export const getReviews = (id) => api.get(`/v1/products/${id}/reviews`);
 export const postReview = (productId, review) =>
   api.post(`/v1/products/${productId}/reviews`, review);
